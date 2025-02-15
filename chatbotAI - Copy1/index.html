@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress-Code</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="fit Photos/" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="programs.html">BEST SELLING</a></li>
+                    <li><a href="ad.html">DETALS</a></li>
+                    <li><a href="">CUSTOMER INTERFACE</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+            <h1>FitnessFusionFare!</h1>
+            <p>Welcome to FitnessFusionFare, your ultimate destination for all things sports and fitness! At FitnessFusionFare, we're passionate about helping athletes and fitness enthusiasts reach their goals and perform at their best. Whether you're a seasoned pro, a weekend warrior, or just starting your fitness journey, we've got everything you need to excel.</p>
+            <a href="Adform.html" class="hero-btn">Add Items</a>
+            <a href="" class="hero-btn">View Items</a>
+            <a href="" class="hero-btn">Edit Items</a>
+        </div>
+    </section>
+
+    <!-------- footer------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>For alternative lifestyles, we produce meaningful designs. As a result, customers receive high-quality, cozy clothing from responsible companies.<br> This website provies you with the best equipment for all sports. And we can assure you that the quality of the products will never dissapoint you.</p>
+        <span class="col">
+            <a href="index.html"></a><img src="fit Photos/instagramlogo.png.png" alt="" width="42" height="40"
+                class="img-thumbnail" /> <a href="index.html"></a> <img src="fit Photos/twitter.png.png" alt=""
+                width="42" height="40" class="img-thumbnail" /></span><span class="col"> <a href="index.html"></a>
+            <img src="fit Photos/facebooklogo.png.png" alt="" width="50" height="44" class="img-thumbnail" /></span><span
+            class="col"><a href="index.html"></a><img src="fit Photos/youtubelogo.png.png" alt="" width="60"
+                height="40" class="img-thumbnail" /></span><br>
+        <div class="social">
+            <p>Get to know more about us</p>
+        </div>
+        <p>&nbsp;</p>
+    </section>
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+            <!-- Small image icon -->
+            <img src="fit Photos/smiley3.png" alt="image" class="small-icon">
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Output div -->
+    <div id="output"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="static/scripts/responses.js"></script>
+    <script src="static/scripts/chat.js"></script>
+    
+</body>
+
+</html>
