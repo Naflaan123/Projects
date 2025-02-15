@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>    
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="fit Photos/instagramlogo.png.png" alt="Instagram">
+                <img src="fit Photos/twitter.png.png" alt="Twitter">
+                <img src="fit Photos/facebooklogo.png.png" alt="Facebook">
+            </div>
+            
+            <!-- Login Form -->
+            <form id="login" class="input-group" method="POST" action="clientlogin.php">
+                <input type="text" name="login_username" class="input-field" placeholder="User Id" required>
+                <input type="password" name="login_password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <!-- Register Form -->
+            <form id="register" class="input-group" style="display: none;" method="POST" action="clientregister.php">
+                <input type="text" name="register_username" class="input-field" placeholder="User Id" required>
+                <input type="email" name="register_email" class="input-field" placeholder="Email Address" required>
+                <input type="password" name="register_password" class="input-field" placeholder="Password" required>
+                
+                <!-- Gender dropdown -->
+                <select name="register_gender" class="input-field" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+            
+            
+        </div>
+    </div>   
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.left = "110px"; 
+        }
+
+        function login() {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.left = "0px"; 
+        }
+    </script>
+</body>
+</html>
