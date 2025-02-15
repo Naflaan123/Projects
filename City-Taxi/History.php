@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>History</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  	<div class="container-fluid">
+  	  <div class="container">
+  	    <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> 
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+				<a class="nav-link" href="Contactus.php">Contact us</a>
+				<a class="nav-link" href="Flavours.php"> Models</a>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"> </li>
+					<li class="nav-item"> <a class="nav-link" href="History.php">History&nbsp;</a> </li>
+					<li class="nav-item dropdown">
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+							<a class="dropdown-item" href="#">Action</a> 
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a> 
+						</div>
+					</li>
+					<li class="nav-item"> </li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+				</form>
+			</div>
+		</nav>
+
+  	    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active col-lg-12"> 
+					<img src="images/car1.jpg" alt="First slide" class="d-block mx-auto rounded img-fluid">            
+				</div>
+			</div>
+		</div>
+  	    <h1 class="text-center">&nbsp;</h1>
+  	    <h1 class="text-center">History Of Our Company&nbsp;</h1>
+        <p class="text-center">Premium Service, Top Quality, Affordable Prices</p>
+        <p class="text-center"> Welcome to AutoZone, your trusted automotive partner since 1927. AutoZone is proud to be a pioneer in the Sri Lankan automotive industry, bringing high-quality cars and parts to the region. Over the years, we have become the go-to dealership in the heart of Colombo. Feel free to explore our Car Models, read about our rich history, or browse our online store. You can also find us on social media platforms for the latest updates.&nbsp;</p>
+	<br><br><br>
+	<button type="button" class="btn btn-lg"><a href="index.php">Go Back To Home&nbsp;</a></button>
+	<br><br><br>
+	<footer> </footer>
+	<div class="row">
+		<div class="col-lg-12 text-center">
+			Copyright &copy; 2022 All rights reserved
+		</div>
+		<br><br>
+  	  </div>
+  	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>

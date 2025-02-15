@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - City Taxi (PVT) Ltd</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+        #registration {
+            padding: 15px;
+            background: #ffffff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #registration h1 {
+            text-align: center;
+            color: #35424a;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"],
+        .form-group input[type="tel"],
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group button {
+            display: inline-block;
+            width: 48%;
+            padding: 10px;
+            background-color: #e8491d;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 4%;
+            text-align: center;
+        }
+        .form-group button:last-child {
+            margin-right: 0;
+            background-color: #35424a;
+        }
+        .form-group button:hover {
+            background-color: #f16b4d;
+        }
+        .form-group button:last-child:hover {
+            background-color: #5c6b70;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #e8491d;
+            text-align: center;
+        }
+        #show-message {
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">City Taxi</span> (PVT) Ltd</h1>
+            </div>
+            <nav>
+                <!-- Navigation links can go here -->
+            </nav>
+        </div>
+    </header>
+
+    <section id="registration">
+        <div class="container">
+            <h1>Register for City Taxi</h1>
+            <form action="process_registration.php" method="post">
+                <!-- Passenger ID -->
+                <div class="form-group">
+                    <label for="passenger-id">Passenger ID:</label>
+                    <input type="text" id="passenger-id" name="passenger-id" required>
+                </div>
+    
+                <!-- First Name -->
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+    
+                <!-- Last Name -->
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+    
+                <!-- Email Address -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+    
+                <!-- Confirm Password -->
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+    
+                <!-- Submit and Cancel Buttons -->
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                    <button type="button" onclick="window.location.href='index.html'">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>City Taxi (PVT) Ltd, Copyright &copy; 2024</p>
+    </footer>
+</body>
+</html>

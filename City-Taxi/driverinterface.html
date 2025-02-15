@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Driver Interface</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="driverstyles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Driver Portal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="driverinterface.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders.html">Orders</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <br>
+        <br>
+        
+
+        <h1 class="text-center">Welcome to the Driver Interface</h1>
+        <p class="text-center">Manage your orders and updates below:</p>
+
+        <form id="orderForm" name="orderForm" method="post" action="">
+            <table class="table table-bordered">
+                <tr>
+                    <td><label for="driverName">Driver Name</label></td>
+                    <td><input type="text" name="driverName" id="driverName" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td><label for="driverId">Driver ID</label></td>
+                    <td><input type="text" name="driverId" id="driverId" class="form-control" /></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="updateStatus">Update Order Status</label></td>
+                    <td>
+                        <select name="updateStatus" id="updateStatus" class="form-control">
+                            <option value="">Select Status</option>
+                            <option value="Available">Available</option>
+                            <option value="Busy">Busy</option>
+                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="comments">Comments</label></td>
+                    <td><textarea name="comments" id="comments" class="form-control" rows="2"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <input type="submit" name="btnSubmit" id="btnSubmit" class="btn btn-primary" value="Update Order" />
+                        <input type="reset" name="btnReset" id="btnReset" class="btn btn-secondary" value="Cancel" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <footer class="text-center mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                Copyright © 2024 All rights reserved
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

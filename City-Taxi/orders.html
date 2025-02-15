@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orders</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="driverstyles.css" rel="stylesheet" type="text/css">
+    <script>
+        function acceptOrder(driverName, vehicle, passengerName) {
+            // Simulate sending a message to the passenger
+            alert(`Driver ${driverName} is driving a ${vehicle}. They have accepted your order, ${passengerName}.`);
+        }
+    </script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Driver Portal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="driverinterface.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders.html">Orders</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1 class="text-center">Orders</h1>
+        <p class="text-center">Here are the orders placed by passengers:</p>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Passenger Name</th>
+                    <th>Pickup Location</th>
+                    <th>Drop-off Location</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>Main St & 1st Ave</td>
+                    <td>2nd Ave & Elm St</td>
+                    <td>Pending</td>
+                    <td>
+                        <button class="btn btn-success btn-sm" onclick="acceptOrder('Alice', 'Toyota Camry', 'John Doe')">Accept</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>Broadway & 42nd St</td>
+                    <td>5th Ave & 34th St</td>
+                    <td>Pending</td>
+                    <td>
+                        <button class="btn btn-success btn-sm" onclick="acceptOrder('Bob', 'Honda Accord', 'Jane Smith')">Accept</button>
+                    </td>
+                </tr>
+                <!-- More rows can be added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="text-center mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                Copyright © 2024 All rights reserved
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
+ 
